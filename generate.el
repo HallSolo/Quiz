@@ -1,3 +1,4 @@
+
 (require 'mustache)
 (require 'calc-bin)
 
@@ -14,15 +15,14 @@
    (lambda (templete context)
 	 ;;	 ( format "%x" (gethash "digit" context) )
 	 ( let ((calc-number-radix (gethash "base" context) ))
-	   (math-format-radix (gethash "digit" context) ) )
+	   (math-format-radix (gethash "digit" context) ) ) 
 	 ))
   )
  )
 )
 )
 
-
-(loop for i from 1 to 250
+(loop for i from 1 to 100
 	  do (
 ;;		  (interactive)
 		  insert  ( quiz_1 i ) "\n\n"

@@ -14,7 +14,7 @@
 (shortanswer-print '((1 183 4 "2313") (2 145 13 "B2") (3 126 14 "90") (4 176 12 "128") (5 138 3 "12010")))
 
 (defun first-quiz ()
-( shortanswer-2-print
+( shortanswer-print
 (loop for x = (+ (random 14) 2)
 	  for y = (+ 101 (random 99))
 	  while (/= size 250)
