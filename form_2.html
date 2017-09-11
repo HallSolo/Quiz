@@ -1,0 +1,25 @@
+<html>
+<form action="https://elearn.interun.ru/login/index.php" method="post" id="login">
+          <div class="loginform">
+            <div class="form-label"><label for="username">Логин</label></div>
+            <div class="form-input">
+              <input type="text" name="username" id="username" size="15" value="">
+            </div>
+            <div class="clearer"><!-- --></div>
+            <div class="form-label"><label for="password">Пароль</label></div>
+            <div class="form-input">
+              <input type="password" name="password" id="password" size="15" value="">
+            </div>
+          </div>
+            <div class="clearer"><!-- --></div>
+                            <div class="rememberpass">
+                  <input type="checkbox" name="rememberusername" id="rememberusername" value="1">
+                  <label for="rememberusername">Запомнить логин</label>
+              </div>
+                        <div class="clearer"><!-- --></div>
+          <input id="anchor" type="hidden" name="anchor" value="">
+          <script>document.getElementById('anchor').value = location.hash</script>
+          <input type="submit" id="loginbtn" value="Вход">
+          <div class="forgetpass"><a href="forgot_password.php">Забыли логин или пароль?</a></div>
+        </form>
+        </html>
